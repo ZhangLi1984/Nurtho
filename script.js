@@ -822,6 +822,40 @@ document.querySelectorAll('.products-dropdown-menu a').forEach(link => {
 });
 
 // ===================================
+// Image Error Handling - Hide 404 Images
+// ===================================
+
+document.addEventListener('DOMContentLoaded', function() {
+    const appImages = document.querySelectorAll('.app-image');
+    
+    appImages.forEach(img => {
+        // Handle images that fail to load
+        img.addEventListener('error', function() {
+            console.warn('Failed to load image:', this.src);
+            this.classList.add('image-error');
+            
+            // If it's a screenshot in a grid, adjust the grid layout
+            const parent = this.parentElement;
+            if (parent && parent.classList.contains('grid')) {
+                // Check if all images in the grid failed
+                const gridImages = parent.querySelectorAll('.app-image');
+                const failedImages = parent.querySelectorAll('.app-image.image-error');
+                
+                if (gridImages.length === failedImages.length) {
+                    // All images failed, hide the entire grid
+                    parent.style.display = 'none';
+                }
+            }
+        });
+        
+        // Handle successful image loads
+        img.addEventListener('load', function() {
+            this.style.opacity = '1';
+        });
+    });
+});
+
+// ===================================
 // Console Welcome Message
 // ===================================
 

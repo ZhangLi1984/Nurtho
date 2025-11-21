@@ -540,3 +540,15 @@ button:focus-visible {
 .transition-smooth {
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+/* ===================================
+   Image Error Handling
+   =================================== */
+
+.app-image.image-error {
+    display: none !important;
+}
+
+.app-image {
+    transition: opacity 0.3s ease;
+}
