@@ -63,9 +63,39 @@
                     <a href="#services" class="apple-nav-link text-sm font-medium text-gray-700 hover:text-gray-900 transition-colors">
                         Services
                     </a>
-                    <a href="#products" class="apple-nav-link text-sm font-medium text-gray-700 hover:text-gray-900 transition-colors">
-                        Products
-                    </a>
+                    <div class="relative products-dropdown">
+                        <button class="apple-nav-link text-sm font-medium text-gray-700 hover:text-gray-900 transition-colors flex items-center">
+                            Products
+                            <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div class="products-dropdown-menu absolute top-full left-0 mt-2 w-64 bg-white rounded-2xl shadow-2xl border border-gray-200 opacity-0 invisible transition-all duration-300 transform translate-y-2">
+                            <div class="py-2">
+                                <a href="#cryptra" class="block px-6 py-3 text-sm text-gray-700 hover:bg-gray-50 transition-colors">
+                                    <i class="fas fa-lock text-purple-600 mr-3"></i>Cryptra
+                                </a>
+                                <a href="#luminara" class="block px-6 py-3 text-sm text-gray-700 hover:bg-gray-50 transition-colors">
+                                    <i class="fas fa-lightbulb text-blue-600 mr-3"></i>Luminara
+                                </a>
+                                <a href="#nurtho" class="block px-6 py-3 text-sm text-gray-700 hover:bg-gray-50 transition-colors">
+                                    <i class="fas fa-baby text-green-600 mr-3"></i>Nurtho
+                                </a>
+                                <a href="#oryntgo" class="block px-6 py-3 text-sm text-gray-700 hover:bg-gray-50 transition-colors">
+                                    <i class="fas fa-clock text-orange-600 mr-3"></i>Oryntgo
+                                </a>
+                                <a href="#veyraflow" class="block px-6 py-3 text-sm text-gray-700 hover:bg-gray-50 transition-colors">
+                                    <i class="fas fa-stream text-indigo-600 mr-3"></i>VeyraFlow
+                                </a>
+                                <a href="#virelo" class="block px-6 py-3 text-sm text-gray-700 hover:bg-gray-50 transition-colors">
+                                    <i class="fas fa-microphone text-pink-600 mr-3"></i>Virelo
+                                </a>
+                                <div class="border-t border-gray-200 mt-2 pt-2">
+                                    <a href="#products" class="block px-6 py-3 text-sm text-blue-600 hover:bg-blue-50 transition-colors font-medium">
+                                        View All Products →
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <a href="#about" class="apple-nav-link text-sm font-medium text-gray-700 hover:text-gray-900 transition-colors">
                         About
                     </a>
@@ -291,161 +321,64 @@
                 <div class="text-center mb-20">
                     <h2 class="apple-section-title text-5xl md:text-6xl font-bold mb-6 tracking-tight">Featured products</h2>
                     <p class="apple-section-subtitle text-xl text-gray-600 max-w-3xl mx-auto font-light mb-8">
-                        Innovative solutions that are transforming industries and delighting millions of users worldwide.
+                        Innovative mobile applications designed to enhance your daily life with elegance and simplicity.
                     </p>
-                    <!-- Product Stats -->
-                    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto mt-12">
-                        <div class="text-center">
-                            <div class="text-3xl font-bold text-gray-900 mb-2">5M+</div>
-                            <div class="text-sm text-gray-600">Total Users</div>
-                        </div>
-                        <div class="text-center">
-                            <div class="text-3xl font-bold text-gray-900 mb-2">150+</div>
-                            <div class="text-sm text-gray-600">Countries</div>
-                        </div>
-                        <div class="text-center">
-                            <div class="text-3xl font-bold text-gray-900 mb-2">4.8★</div>
-                            <div class="text-sm text-gray-600">Avg Rating</div>
-                        </div>
-                        <div class="text-center">
-                            <div class="text-3xl font-bold text-gray-900 mb-2">24/7</div>
-                            <div class="text-sm text-gray-600">Support</div>
-                        </div>
-                    </div>
                 </div>
                 
-                <!-- Product 1 -->
-                <div class="apple-product-feature mb-32">
-                    <div class="grid md:grid-cols-2 gap-16 items-center">
-                        <div class="order-2 md:order-1">
+                <!-- Product 1: Cryptra (奇数 - 左文右图) -->
+                <div id="cryptra" class="apple-product-feature mb-32">
+                    <div class="grid md:grid-cols-2 gap-16 items-start">
+                        <!-- 左侧：文字内容 -->
+                        <div>
                             <div class="mb-4">
-                                <span class="inline-block px-4 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">AI Platform</span>
+                                <span class="inline-block px-4 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">Security App</span>
                             </div>
-                            <h3 class="text-4xl md:text-5xl font-bold mb-6 tracking-tight">VisionAI Pro</h3>
+                            <h3 class="text-4xl md:text-5xl font-bold mb-6 tracking-tight">Cryptra</h3>
                             <p class="text-xl text-gray-600 mb-8 leading-relaxed font-light">
-                                Advanced AI platform that empowers businesses with intelligent automation, predictive analytics, and natural language understanding. Transform your operations with cutting-edge machine learning technology.
+                                Cryptra is your personal digital guardian. All passwords and sensitive data are encrypted locally on your device using your master password—never sent to the cloud. Its unique Security Dashboard scans your entire vault in real time, delivers a clear safety score, and flags weak or reused passwords. With one tap, generate a strong new password and replace it instantly. Security made clear, proactive, and effortless.
                             </p>
-                            
-                            <!-- Key Metrics -->
-                            <div class="grid grid-cols-3 gap-6 mb-8 p-6 bg-gradient-to-br from-purple-50 to-indigo-50 rounded-2xl">
-                                <div class="text-center">
-                                    <div class="text-2xl font-bold text-purple-600 mb-1">500K+</div>
-                                    <div class="text-xs text-gray-600">API Calls/Day</div>
-                                </div>
-                                <div class="text-center">
-                                    <div class="text-2xl font-bold text-purple-600 mb-1">99.9%</div>
-                                    <div class="text-xs text-gray-600">Accuracy</div>
-                                </div>
-                                <div class="text-center">
-                                    <div class="text-2xl font-bold text-purple-600 mb-1">50ms</div>
-                                    <div class="text-xs text-gray-600">Response Time</div>
-                                </div>
-                            </div>
-                            
-                            <ul class="space-y-4 mb-8">
-                                <li class="flex items-start text-gray-700">
-                                    <i class="fas fa-check-circle text-blue-600 mr-3 mt-1"></i>
-                                    <span>Real-time data processing with ML models trained on 10B+ data points</span>
-                                </li>
-                                <li class="flex items-start text-gray-700">
-                                    <i class="fas fa-check-circle text-blue-600 mr-3 mt-1"></i>
-                                    <span>Multi-language NLP supporting 95+ languages</span>
-                                </li>
-                                <li class="flex items-start text-gray-700">
-                                    <i class="fas fa-check-circle text-blue-600 mr-3 mt-1"></i>
-                                    <span>Enterprise-grade security with SOC 2 Type II certification</span>
-                                </li>
-                            </ul>
-                            
-                            <!-- Customer Quote -->
-                            <div class="bg-white p-6 rounded-xl border-l-4 border-purple-500 mb-8">
-                                <p class="text-gray-700 italic mb-3">"VisionAI Pro reduced our operational costs by 40% and improved decision-making accuracy significantly."</p>
-                                <div class="flex items-center">
-                                    <div class="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center mr-3">
-                                        <span class="text-purple-600 font-semibold">JM</span>
-                                    </div>
-                                    <div>
-                                        <div class="font-semibold text-gray-900">Jennifer Martinez</div>
-                                        <div class="text-sm text-gray-600">CTO, TechCorp Global</div>
-                                    </div>
-                                </div>
-                            </div>
-                            
                             <a href="#contact" class="apple-link-arrow">
                                 Learn more
                                 <i class="fas fa-arrow-right ml-2"></i>
                             </a>
                         </div>
-                        <div class="order-1 md:order-2">
-                            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=600&fit=crop&q=90" 
-                                 alt="VisionAI Pro" 
-                                 class="rounded-3xl shadow-2xl">
+                        <!-- 右侧：Icon + 截图 -->
+                        <div>
+                            <div class="mb-6">
+                                <img src="assets/Cryptra/Cryptra.png" alt="Cryptra Icon" class="w-24 h-24 rounded-3xl shadow-lg">
+                            </div>
+                            <div class="grid grid-cols-3 gap-4">
+                                <img src="assets/Cryptra/jietu/Simulator Screenshot - iPhone 16 Pro Max - 2025-11-13 at 17.14.00.png" alt="Cryptra Screenshot 1" class="rounded-2xl shadow-lg w-full">
+                                <img src="assets/Cryptra/jietu/Simulator Screenshot - iPhone 16 Pro Max - 2025-11-13 at 17.14.02.png" alt="Cryptra Screenshot 2" class="rounded-2xl shadow-lg w-full">
+                                <img src="assets/Cryptra/jietu/Simulator Screenshot - iPhone 16 Pro Max - 2025-11-13 at 17.14.04.png" alt="Cryptra Screenshot 3" class="rounded-2xl shadow-lg w-full">
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Product 2 -->
-                <div class="apple-product-feature mb-32">
-                    <div class="grid md:grid-cols-2 gap-16 items-center">
+                <!-- Product 2: Luminara (偶数 - 左图右文) -->
+                <div id="luminara" class="apple-product-feature mb-32">
+                    <div class="grid md:grid-cols-2 gap-16 items-start">
+                        <!-- 左侧：Icon + 截图 -->
                         <div>
-                            <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&h=600&fit=crop&q=90" 
-                                 alt="FlowApp Suite" 
-                                 class="rounded-3xl shadow-2xl">
+                            <div class="mb-6">
+                                <img src="assets/Luminara/Luminara.png" alt="Luminara Icon" class="w-24 h-24 rounded-3xl shadow-lg">
+                            </div>
+                            <div class="grid grid-cols-3 gap-4">
+                                <img src="assets/Luminara/jietu/Simulator Screenshot - iPhone 16 Pro Max - 2025-11-15 at 14.50.33.png" alt="Luminara Screenshot 1" class="rounded-2xl shadow-lg w-full">
+                                <img src="assets/Luminara/jietu/Simulator Screenshot - iPhone 16 Pro Max - 2025-11-15 at 14.50.35.png" alt="Luminara Screenshot 2" class="rounded-2xl shadow-lg w-full">
+                                <img src="assets/Luminara/jietu/Simulator Screenshot - iPhone 16 Pro Max - 2025-11-15 at 14.50.36.png" alt="Luminara Screenshot 3" class="rounded-2xl shadow-lg w-full">
+                            </div>
                         </div>
+                        <!-- 右侧：文字内容 -->
                         <div>
                             <div class="mb-4">
-                                <span class="inline-block px-4 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">Mobile App</span>
+                                <span class="inline-block px-4 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">Learning App</span>
                             </div>
-                            <h3 class="text-4xl md:text-5xl font-bold mb-6 tracking-tight">FlowApp Suite</h3>
+                            <h3 class="text-4xl md:text-5xl font-bold mb-6 tracking-tight">Luminara</h3>
                             <p class="text-xl text-gray-600 mb-8 leading-relaxed font-light">
-                                Comprehensive mobile productivity suite trusted by over 2 million users. Streamline your workflow, collaborate seamlessly, and boost productivity on the go with our award-winning app.
+                                Luminara is your personal companion for learning — silent, steady, and deeply attuned to your rhythm. It doesn't push or compare — it simply lights a gentle glow when you begin, and whispers celebration when you finish. Your growth unfolds quietly, and Luminara remembers every step.
                             </p>
-                            
-                            <!-- Key Metrics -->
-                            <div class="grid grid-cols-3 gap-6 mb-8 p-6 bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl">
-                                <div class="text-center">
-                                    <div class="text-2xl font-bold text-blue-600 mb-1">2.5M+</div>
-                                    <div class="text-xs text-gray-600">Active Users</div>
-                                </div>
-                                <div class="text-center">
-                                    <div class="text-2xl font-bold text-blue-600 mb-1">4.8★</div>
-                                    <div class="text-xs text-gray-600">App Store Rating</div>
-                                </div>
-                                <div class="text-center">
-                                    <div class="text-2xl font-bold text-blue-600 mb-1">150M+</div>
-                                    <div class="text-xs text-gray-600">Tasks Completed</div>
-                                </div>
-                            </div>
-                            
-                            <ul class="space-y-4 mb-8">
-                                <li class="flex items-start text-gray-700">
-                                    <i class="fas fa-check-circle text-blue-600 mr-3 mt-1"></i>
-                                    <span>Cross-platform sync across iOS, Android, and Web</span>
-                                </li>
-                                <li class="flex items-start text-gray-700">
-                                    <i class="fas fa-check-circle text-blue-600 mr-3 mt-1"></i>
-                                    <span>Real-time collaboration with teams up to 500 members</span>
-                                </li>
-                                <li class="flex items-start text-gray-700">
-                                    <i class="fas fa-check-circle text-blue-600 mr-3 mt-1"></i>
-                                    <span>Offline mode with automatic sync when online</span>
-                                </li>
-                            </ul>
-                            
-                            <!-- Customer Quote -->
-                            <div class="bg-white p-6 rounded-xl border-l-4 border-blue-500 mb-8">
-                                <p class="text-gray-700 italic mb-3">"FlowApp transformed how our distributed team works. Productivity increased by 35% in just 2 months!"</p>
-                                <div class="flex items-center">
-                                    <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mr-3">
-                                        <span class="text-blue-600 font-semibold">DK</span>
-                                    </div>
-                                    <div>
-                                        <div class="font-semibold text-gray-900">David Kim</div>
-                                        <div class="text-sm text-gray-600">Product Manager, StartupHub</div>
-                                    </div>
-                                </div>
-                            </div>
-                            
                             <a href="#contact" class="apple-link-arrow">
                                 Learn more
                                 <i class="fas fa-arrow-right ml-2"></i>
@@ -454,72 +387,126 @@
                     </div>
                 </div>
 
-                <!-- Product 3 -->
-                <div class="apple-product-feature">
-                    <div class="grid md:grid-cols-2 gap-16 items-center">
-                        <div class="order-2 md:order-1">
+                <!-- Product 3: Nurtho (奇数 - 左文右图) -->
+                <div id="nurtho" class="apple-product-feature mb-32">
+                    <div class="grid md:grid-cols-2 gap-16 items-start">
+                        <!-- 左侧：文字内容 -->
+                        <div>
                             <div class="mb-4">
-                                <span class="inline-block px-4 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">Gaming</span>
+                                <span class="inline-block px-4 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">Baby Care</span>
                             </div>
-                            <h3 class="text-4xl md:text-5xl font-bold mb-6 tracking-tight">Legends Arena</h3>
+                            <h3 class="text-4xl md:text-5xl font-bold mb-6 tracking-tight">Nurtho</h3>
                             <p class="text-xl text-gray-600 mb-8 leading-relaxed font-light">
-                                Immersive multiplayer gaming experience with stunning graphics and engaging gameplay. Join millions of players in epic battles and forge your legend in the arena.
+                                Nurtho is a minimalist baby care timer designed for parents. One tap starts feeding, diaper change, or sleep tracking. Time is logged automatically. After completion, add brief details with zero friction. Data transforms into quiet insights—helping you see patterns, not just numbers. Watch. Log. Grow.
                             </p>
-                            
-                            <!-- Key Metrics -->
-                            <div class="grid grid-cols-3 gap-6 mb-8 p-6 bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl">
-                                <div class="text-center">
-                                    <div class="text-2xl font-bold text-green-600 mb-1">3.2M+</div>
-                                    <div class="text-xs text-gray-600">Monthly Players</div>
-                                </div>
-                                <div class="text-center">
-                                    <div class="text-2xl font-bold text-green-600 mb-1">4.7★</div>
-                                    <div class="text-xs text-gray-600">User Rating</div>
-                                </div>
-                                <div class="text-center">
-                                    <div class="text-2xl font-bold text-green-600 mb-1">50+</div>
-                                    <div class="text-xs text-gray-600">Weekly Events</div>
-                                </div>
-                            </div>
-                            
-                            <ul class="space-y-4 mb-8">
-                                <li class="flex items-start text-gray-700">
-                                    <i class="fas fa-check-circle text-blue-600 mr-3 mt-1"></i>
-                                    <span>Cross-platform play on PC, Console, and Mobile</span>
-                                </li>
-                                <li class="flex items-start text-gray-700">
-                                    <i class="fas fa-check-circle text-blue-600 mr-3 mt-1"></i>
-                                    <span>100+ unique characters with deep customization</span>
-                                </li>
-                                <li class="flex items-start text-gray-700">
-                                    <i class="fas fa-check-circle text-blue-600 mr-3 mt-1"></i>
-                                    <span>Seasonal tournaments with $1M+ prize pools</span>
-                                </li>
-                            </ul>
-                            
-                            <!-- Customer Quote -->
-                            <div class="bg-white p-6 rounded-xl border-l-4 border-green-500 mb-8">
-                                <p class="text-gray-700 italic mb-3">"Best multiplayer game I've played in years. The community is amazing and devs listen to feedback!"</p>
-                                <div class="flex items-center">
-                                    <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-3">
-                                        <span class="text-green-600 font-semibold">SL</span>
-                                    </div>
-                                    <div>
-                                        <div class="font-semibold text-gray-900">Sarah Lee</div>
-                                        <div class="text-sm text-gray-600">Pro Gamer, Top 100 Ranked</div>
-                                    </div>
-                                </div>
-                            </div>
-                            
                             <a href="#contact" class="apple-link-arrow">
                                 Learn more
                                 <i class="fas fa-arrow-right ml-2"></i>
                             </a>
                         </div>
-                        <div class="order-1 md:order-2">
-                            <img src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?w=800&h=600&fit=crop&q=90" 
-                                 alt="Legends Arena" 
-                                 class="rounded-3xl shadow-2xl">
+                        <!-- 右侧：Icon + 截图 -->
+                        <div>
+                            <div class="mb-6">
+                                <img src="assets/Nurtho/Nurtho.png" alt="Nurtho Icon" class="w-24 h-24 rounded-3xl shadow-lg">
+                            </div>
+                            <div class="grid grid-cols-3 gap-4">
+                                <img src="assets/Nurtho/jietu/Simulator Screenshot - iPhone 16 Pro Max - 2025-11-15 at 14.43.21.png" alt="Nurtho Screenshot 1" class="rounded-2xl shadow-lg w-full">
+                                <img src="assets/Nurtho/jietu/Simulator Screenshot - iPhone 16 Pro Max - 2025-11-15 at 14.43.23.png" alt="Nurtho Screenshot 2" class="rounded-2xl shadow-lg w-full">
+                                <img src="assets/Nurtho/jietu/Simulator Screenshot - iPhone 16 Pro Max - 2025-11-15 at 14.43.24.png" alt="Nurtho Screenshot 3" class="rounded-2xl shadow-lg w-full">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4: Oryntgo (偶数 - 左图右文) -->
+                <div id="oryntgo" class="apple-product-feature mb-32">
+                    <div class="grid md:grid-cols-2 gap-16 items-start">
+                        <!-- 左侧：Icon + 截图 -->
+                        <div>
+                            <div class="mb-6">
+                                <img src="assets/Oryntgo/oryntgo.png" alt="Oryntgo Icon" class="w-24 h-24 rounded-3xl shadow-lg">
+                            </div>
+                            <div class="grid grid-cols-3 gap-4">
+                                <img src="assets/Oryntgo/jietu/Simulator Screenshot - iPhone 16 Pro Max - 2025-11-13 at 15.03.10.png" alt="Oryntgo Screenshot 1" class="rounded-2xl shadow-lg w-full">
+                                <img src="assets/Oryntgo/jietu/Simulator Screenshot - iPhone 16 Pro Max - 2025-11-13 at 15.03.12.png" alt="Oryntgo Screenshot 2" class="rounded-2xl shadow-lg w-full">
+                                <img src="assets/Oryntgo/jietu/Simulator Screenshot - iPhone 16 Pro Max - 2025-11-13 at 15.14.18.png" alt="Oryntgo Screenshot 3" class="rounded-2xl shadow-lg w-full">
+                            </div>
+                        </div>
+                        <!-- 右侧：文字内容 -->
+                        <div>
+                            <div class="mb-4">
+                                <span class="inline-block px-4 py-1 bg-orange-100 text-orange-700 rounded-full text-sm font-medium">Timer & Display</span>
+                            </div>
+                            <h3 class="text-4xl md:text-5xl font-bold mb-6 tracking-tight">Oryntgo</h3>
+                            <p class="text-xl text-gray-600 mb-8 leading-relaxed font-light">
+                                Orynt lets you create multi-segment timed routines, such as 5-minute warmup, 20-minute run, 2-minute rest, repeated 3 times. It also lets you type text, choose color and scroll speed to display full-screen horizontal banners. You can link a timer routine to a banner — when the timer ends, it automatically switches to the banner.
+                            </p>
+                            <a href="#contact" class="apple-link-arrow">
+                                Learn more
+                                <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5: VeyraFlow (奇数 - 左文右图) -->
+                <div id="veyraflow" class="apple-product-feature mb-32">
+                    <div class="grid md:grid-cols-2 gap-16 items-start">
+                        <!-- 左侧：文字内容 -->
+                        <div>
+                            <div class="mb-4">
+                                <span class="inline-block px-4 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm font-medium">Time Management</span>
+                            </div>
+                            <h3 class="text-4xl md:text-5xl font-bold mb-6 tracking-tight">VeyraFlow</h3>
+                            <p class="text-xl text-gray-600 mb-8 leading-relaxed font-light">
+                                Veyra is an intelligent time-flow system designed for learners. It seamlessly weaves together classes, tasks, and open periods, turning every minute into a thread of your personal growth journey. No switching. No distraction. Just focus on the path you're walking.
+                            </p>
+                            <a href="#contact" class="apple-link-arrow">
+                                Learn more
+                                <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                        <!-- 右侧：Icon + 截图 -->
+                        <div>
+                            <div class="mb-6">
+                                <img src="assets/VeyraFlow/VeyraFlow.png" alt="VeyraFlow Icon" class="w-24 h-24 rounded-3xl shadow-lg">
+                            </div>
+                            <div class="grid grid-cols-3 gap-4">
+                                <img src="assets/VeyraFlow/JIETU/Simulator Screenshot - iPhone 16 Pro Max - 2025-11-15 at 15.12.48.png" alt="VeyraFlow Screenshot 1" class="rounded-2xl shadow-lg w-full">
+                                <img src="assets/VeyraFlow/JIETU/Simulator Screenshot - iPhone 16 Pro Max - 2025-11-15 at 15.12.54.png" alt="VeyraFlow Screenshot 2" class="rounded-2xl shadow-lg w-full">
+                                <img src="assets/VeyraFlow/JIETU/Simulator Screenshot - iPhone 16 Pro Max - 2025-11-15 at 15.15.23.png" alt="VeyraFlow Screenshot 3" class="rounded-2xl shadow-lg w-full">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6: Virelo (偶数 - 左图右文) -->
+                <div id="virelo" class="apple-product-feature">
+                    <div class="grid md:grid-cols-2 gap-16 items-start">
+                        <!-- 左侧：Icon + 截图 -->
+                        <div>
+                            <div class="mb-6">
+                                <img src="assets/Virelo/Virelo.png" alt="Virelo Icon" class="w-24 h-24 rounded-3xl shadow-lg">
+                            </div>
+                            <div class="grid grid-cols-3 gap-4">
+                                <img src="assets/Virelo/jietu/Simulator Screenshot - iPhone 16 Pro Max - 2025-11-14 at 22.21.12.png" alt="Virelo Screenshot 1" class="rounded-2xl shadow-lg w-full">
+                                <img src="assets/Virelo/jietu/Simulator Screenshot - iPhone 16 Pro Max - 2025-11-14 at 22.21.14.png" alt="Virelo Screenshot 2" class="rounded-2xl shadow-lg w-full">
+                                <img src="assets/Virelo/jietu/Simulator Screenshot - iPhone 16 Pro Max - 2025-11-14 at 22.21.16.png" alt="Virelo Screenshot 3" class="rounded-2xl shadow-lg w-full">
+                            </div>
+                        </div>
+                        <!-- 右侧：文字内容 -->
+                        <div>
+                            <div class="mb-4">
+                                <span class="inline-block px-4 py-1 bg-pink-100 text-pink-700 rounded-full text-sm font-medium">Teleprompter</span>
+                            </div>
+                            <h3 class="text-4xl md:text-5xl font-bold mb-6 tracking-tight">Virelo</h3>
+                            <p class="text-xl text-gray-600 mb-8 leading-relaxed font-light">
+                                Virelo is a vertical teleprompter and timer built for English speakers. It intelligently syncs script scrolling with time progression, using subtle color cues to guide your pace. With customizable themes, script library, and post-speech reflection, Virelo helps you speak with focus, flow, and confidence—every time.
+                            </p>
+                            <a href="#contact" class="apple-link-arrow">
+                                Learn more
+                                <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
                         </div>
                     </div>
                 </div>

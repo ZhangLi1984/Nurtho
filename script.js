@@ -799,6 +799,29 @@ window.addEventListener('load', () => {
 });
 
 // ===================================
+// Product Navigation Dropdown - Smooth Scroll
+// ===================================
+
+document.querySelectorAll('.products-dropdown-menu a').forEach(link => {
+    link.addEventListener('click', function(e) {
+        const href = this.getAttribute('href');
+        if (href.startsWith('#') && href !== '#products') {
+            e.preventDefault();
+            const targetId = href.substring(1);
+            const targetElement = document.getElementById(targetId);
+            if (targetElement) {
+                const navHeight = document.querySelector('nav').offsetHeight;
+                const targetPosition = targetElement.offsetTop - navHeight - 20;
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        }
+    });
+});
+
+// ===================================
 // Console Welcome Message
 // ===================================
 

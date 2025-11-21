@@ -69,6 +69,23 @@ html {
     width: 100%;
 }
 
+/* Products Dropdown */
+.products-dropdown:hover .products-dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.products-dropdown-menu {
+    z-index: 100;
+}
+
+.products-dropdown button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
 .apple-button {
     background: #0071e3;
     color: white;
